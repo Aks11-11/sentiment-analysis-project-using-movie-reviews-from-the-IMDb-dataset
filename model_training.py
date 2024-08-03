@@ -24,7 +24,6 @@ def load_data():
     y_train = np.load('model/y_train.npy')
     y_test = np.load('model/y_test.npy')
     return X_train, X_test, y_train, y_test
-
 def main():
     X_train, X_test, y_train, y_test = load_data()
     model = create_model(X_train.shape[1])
